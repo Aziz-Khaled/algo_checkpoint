@@ -11,8 +11,11 @@ BEGIN
          nb_mot = nb_mot+1 ;
    nb_car = nb_car +1 ;
     END_IF
-     IF (c='a' , c='e', c='u', c='y', c='o' , c='i') THEN
+     IF (c="a" , c="e", c="u", c="y", c="o" , c="i") THEN
          nb_voy = nb_voy +1 ;
      END_IF
     END_WHILE ;
+    write ("le nombre de voyels est :", nb_voy) ;
+    write ("le nombre de caracteres est :", nb_car) ;
+    write ("le nombre de mots est :", nb_mot) ;
 END
