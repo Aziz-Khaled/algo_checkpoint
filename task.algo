@@ -1,0 +1,18 @@
+ALGORITHM checkpoint
+VAR
+    nb_car : INTEGER := 0;
+    nb_voy : INTEGER := 1;
+    nb_mot : INTEGER := 0;
+    c : CHAR := ''  ;
+BEGIN
+    WHILE ( c<>.) DO
+    read (c) ;
+        IF (c = .) THEN
+         nb_mot = nb_mot+1 ;
+   nb_car = nb_car +1 ;
+    END_IF
+     IF (c='a' , c='e', c='u', c='y', c='o' , c='i') THEN
+         nb_voy = nb_voy +1 ;
+     END_IF
+    END_WHILE ;
+END
